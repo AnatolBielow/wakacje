@@ -1,0 +1,144 @@
+
+
+img {
+    display: block;
+    width: 100%;
+  }
+
+
+body {
+    background-image: url(./img/tlo.jpg);
+    
+        /* Set rules to fill background */
+        
+        min-width: 100%;
+          
+        /* Set up proportionate scaling */
+        width: 100%;
+        height: auto;
+          
+        /* Set up positioning */
+        position: fixed;
+        top: 0;
+        left: 0;
+      margin: 0 auto;
+      padding: 0 auto;
+
+}
+h1 {
+    display: none;
+ 
+
+}
+
+@media screen and (min-width: 480px) {
+    h1 {
+        display: inline-block;
+        text-align: end;
+        color: gold;
+        box-sizing: content-box;
+        text-align: center;
+        font-family: 'Architects Daughter', cursive;
+        text-shadow: 10px 10px 15px black;; 
+    
+    }
+}
+.container {
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1350px;
+  }
+}
+.game .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    width: 110px;
+    height: 160px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-image: url(./img/wakacje.jpg);
+    background-size: contain;
+    background-position: center;
+    border: 3px solid black;
+    border-radius: 15px;
+
+    transition: all 300ms;
+
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 120px;
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .card {
+    width: 200px;
+    height: 295px;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+.card:hover {
+    border-color:gold;
+}
+
+.zdjecie1 {
+    background-image: url(./img/zdjecie1.jpg);
+}
+.zdjecie2 {
+    background-image: url(./img/zdjecie2.jpg);
+}
+.zdjecie3 {
+    background-image: url(./img/zdjecie3.jpg);
+}
+.zdjecie4 {
+    background-image: url(./img/zdjecie4.jpg);
+}
+.zdjecie5 {
+    background-image: url(./img/zdjecie5.jpg);
+}
+.zdjecie6 {
+    background-image: url(./img/zdjecie6.jpg);
+}
+.zdjecie7 {
+    background-image: url(./img/zdjecie7.jpg);
+}
+.zdjecie8 {
+    background-image: url(./img/zdjecie8.jpg);
+}
+.zdjecie9 {
+    background-image: url(./img/zdjecie9.jpg);
+}
+.zdjecie10 {
+    background-image: url(./img/zdjecie10.jpg);
+}
+.zdjecie11 {
+    background-image: url(./img/zdjecie11.jpg);
+}
+.hidden {
+    background-image: url(./img/wakacje.jpg);
+    -webkit-box-shadow: 4px 7px 19px 5px rgba(0,0,0,0.6); 
+    box-shadow: 4px 7px 19px 5px rgba(0,0,0,0.6);
+}
+.off {
+    background: none;
+    border: none;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0); 
+box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
