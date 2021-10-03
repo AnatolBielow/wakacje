@@ -83,9 +83,19 @@ let gameResult = 0;
                  //Sprawdzenie czy nastąpił koniec gry
                  if (gameResult == gameLength) {
                      const endTime = new Date().getTime();
-                     const gameTime = (endTime - startTime) / 1000
-                     alert(`Udało się! Twój wynik to: ${gameTime} sekund`)
-                     location.reload();
+                     const gameTime = (endTime - startTime) / 1000; 
+                     console.log({gameTime});
+                     const timeAlert = document.querySelector("h2");
+                     //const title = document.querySelector(".article .title");
+                    //title.innerHTML = 'New and <span class="accent">improved</span> title';
+                     timeAlert.innerHTML = `Brawo! Wygrana!!! Twój czas <br>  ${gameTime}`;
+                     const button = document.getElementById('button');
+                    button.classList.remove("is-hidden");
+                 
+                    button.onclick = function() {
+                    location.reload()};
+
+                    
                  }
              }
              //przegrana. ponowne ukrycie
